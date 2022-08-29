@@ -22,7 +22,7 @@ npx husky install
 npx husky add .husky/pre-commit "npm run lint-staged"
 ```
 
-添加 pre-commit 钩子
+添加 `pre-commit` 钩子
 
 `package.json` 中添加 `lint-staged` 的 `script` 和相应配置
 
