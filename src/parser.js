@@ -8,7 +8,8 @@ export const parseMetaRecord = (data) => {
     return {};
   }
   const frontMatter = data.match(META_REGEX).groups.frontMatter;
-  const lines = frontMatter.split("\r|\n|\r\n");
+  const lines = frontMatter.split(/\r|\n|\r\n/);
+  console.log(lines);
   const record = {};
   lines
     .filter(Boolean)
@@ -25,17 +26,18 @@ export const parseMetaRecord = (data) => {
     .forEach(([key, value]) => {
       record[key] = value;
     });
+  console.log(record);
   return record;
 };
 
 /**
  *
  * @param {string} data
- * @param {{[x?: "date" | "updated"]: string}} record
+ * @param {Record<string, string>} record
  */
 export const replaceMetaRecord = (data, record) => {
   const originRecord = parseMetaRecord(data);
-  record = Object.assign({}, record, originRecord);
+  record = Object.assign({}, originRecord, record);
   const str = Object.entries(record)
     .map(([key, value]) => {
       if (!value) {
@@ -44,5 +46,5 @@ export const replaceMetaRecord = (data, record) => {
       return `${key}: ${value}`;
     })
     .join("\r\n");
-  data.replace(META_REGEX, `---\r\n${str}\r\n---\r\n`);
+  return data.replace(META_REGEX, `---\r\n${str}\r\n---\r\n`);
 };
