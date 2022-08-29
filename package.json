@@ -2,20 +2,27 @@
   "name": "hexo-update-time",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
   "bin": "./bin/hexo-update-time.js",
+  "files": [
+    "bin",
+    "src"
+  ],
   "scripts": {
-    "dev": "node bin/hexo-update-time.js",
-    "test": "node src/test.js"
+    "dev": "node bin/hexo-update-time.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "hexo",
+    "git"
+  ],
+  "author": {
+    "name": "par9uet",
+    "email": "1607611087@qq.com"
+  },
   "license": "ISC",
   "dependencies": {
     "commander": "^9.4.0",
     "dayjs": "^1.11.5",
-    "execa": "^6.1.0",
-    "marked": "^4.0.19"
+    "execa": "^6.1.0"
   }
 }

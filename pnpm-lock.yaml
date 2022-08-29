@@ -4,13 +4,11 @@ specifiers:
   commander: ^9.4.0
   dayjs: ^1.11.5
   execa: ^6.1.0
-  marked: ^4.0.19
 
 dependencies:
   commander: registry.npmmirror.com/commander/9.4.0
   dayjs: registry.npmmirror.com/dayjs/1.11.5
   execa: registry.npmmirror.com/execa/6.1.0
-  marked: registry.npmmirror.com/marked/4.0.19
 
 packages:
 
@@ -80,14 +78,6 @@ packages:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/isexe/-/isexe-2.0.0.tgz}
     name: isexe
     version: 2.0.0
-    dev: false
-
-  registry.npmmirror.com/marked/4.0.19:
-    resolution: {integrity: sha512-rgQF/OxOiLcvgUAj1Q1tAf4Bgxn5h5JZTp04Fx4XUkVhs7B+7YA9JEWJhJpoO8eJt8MkZMwqLCNeNqj1bCREZQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/marked/-/marked-4.0.19.tgz}
-    name: marked
-    version: 4.0.19
-    engines: {node: '>= 12'}
-    hasBin: true
     dev: false
 
   registry.npmmirror.com/merge-stream/2.0.0:
