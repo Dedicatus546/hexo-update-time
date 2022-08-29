@@ -1,0 +1,21 @@
+{
+  "name": "hexo-update-time",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": "./bin/hexo-update-time.js",
+  "scripts": {
+    "dev": "node bin/hexo-update-time.js",
+    "test": "node src/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^9.4.0",
+    "dayjs": "^1.11.5",
+    "execa": "^6.1.0",
+    "marked": "^4.0.19"
+  }
+}
