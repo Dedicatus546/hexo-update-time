@@ -22,8 +22,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "commander": "^9.4.0",
-    "dayjs": "^1.11.5",
-    "execa": "^6.1.0"
+    "commander": "^12.1.0",
+    "dayjs": "^1.11.12",
+    "execa": "^9.3.0"
   }
 }
